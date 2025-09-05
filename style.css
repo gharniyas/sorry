@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background: rgba(255,255,255,0.9);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(67,198,172,0.2);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.sorry-visual {
+    margin-bottom: 18px;
+}
+.sorry-emoji {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+.sorry-gif {
+    width: 120px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(67,198,172,0.12);
+    margin-bottom: 8px;
+}
+
+.apology-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.apology-list li {
+    background: #e0f7fa;
+    margin: 16px 0;
+    padding: 18px 22px;
+    border-radius: 10px;
+    font-size: 1.15em;
+    color: #2e7d7b;
+    box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+    transition: transform 0.2s;
+}
+.apology-list li:hover {
+    transform: scale(1.03);
+    background: #b2ebf2;
+}
+
+h1 {
+    color: #43c6ac;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 16px 0;
+}
