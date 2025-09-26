@@ -4,7 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sorry</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: bgFade 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes bgFade {
+        0% {
+          background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+        }
+        100% {
+          background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+      }
+
+      .container {
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(67, 198, 172, 0.3);
+        padding: 40px 30px;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .sorry-visual {
+        margin-bottom: 18px;
+      }
+
+      .sorry-emoji {
+        font-size: 2.5em;
+        display: block;
+        margin-bottom: 10px;
+        animation: float 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-8px);
+        }
+      }
+
+      .sorry-gif {
+        width: 120px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(67, 198, 172, 0.12);
+        margin-bottom: 8px;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        color: #43c6ac;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        animation: bounce 1.2s ease-in-out;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      .apology-list {
+        list-style: none;
+        padding: 0;
+        margin: 30px 0 0 0;
+      }
+
+      .apology-list li {
+        background: #e0f7fa;
+        margin: 16px 0;
+        padding: 18px 22px;
+        border-radius: 10px;
+        font-size: 1.15em;
+        color: #2e7d7b;
+        box-shadow: 0 2px 8px rgba(67, 198, 172, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideUp 0.6s ease-out forwards;
+      }
+
+      .apology-list li:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+      .apology-list li:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+      .apology-list li:nth-child(3) {
+        animation-delay: 0.9s;
+      }
+      .apology-list li:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+      .apology-list li:nth-child(5) {
+        animation-delay: 1.5s;
+      }
+      .apology-list li:nth-child(6) {
+        animation-delay: 1.8s;
+      }
+
+      @keyframes slideUp {
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .apology-list li:hover {
+        transform: scale(1.05);
+        background: #b2ebf2;
+        box-shadow: 0 4px 12px rgba(67, 198, 172, 0.3);
+      }
+
+      p {
+        color: #333;
+        font-size: 1.2em;
+        margin: 16px 0;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -19,22 +164,22 @@
       <h1>I'm Truly Sorry Varsha</h1>
       <ul class="apology-list">
         <li>
-          💔 If I have hurt you in any way, please forgive me varsha from the
-          bottom of your heart.
+          💔 If I have hurt you in any way, please forgive me from the bottom of
+          your heart.
         </li>
         <li>
           🌹 I am willing to do anything to bring back the past happiness and
           peace between us.
         </li>
         <li>💝 All I ask is for you to accept me as I am, flaws and all.</li>
-        <li>✨ Please value my efforts—I am trying my best.</li>
+        <li>✨ Please value my efforts — I am trying my best.</li>
         <li>
-          Ennoda personals ella unnaku thavara vera yarukum theriyatha and i
-          dont trust anyone to share my feelingsfee because yaro.
+          🫂 Ennoda personals ella unnaku thavara vera yarukum theriyatha and I
+          trust only you to share my feelings.
         </li>
         <li>
-          Neenga nala irukanumnu kashtam padakudathunu nenaikara personnah
-          Please dont hurt him.
+          🤍 Neenga nala irukanumnu kashtam padakudathunu nenaikara personnah.
+          Please don’t hurt him.
         </li>
       </ul>
     </div>
